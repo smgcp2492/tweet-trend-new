@@ -47,7 +47,7 @@ environment {
   }
       }
     }
-  }
+
     stage("Jar Publish") {
         steps {
             script {
@@ -73,6 +73,6 @@ environment {
             }
         }   
     }
-
+    }
 }
     
