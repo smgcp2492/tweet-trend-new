@@ -33,6 +33,7 @@ environment {
       sh "${scannerHome}/bin/sonar-scanner"
     }
     }
+    }
 
     stage("Quality Gate"){
       steps {
@@ -44,7 +45,7 @@ environment {
   }
       }
     }
-    }
-    }
+  }
+    
 }
     
