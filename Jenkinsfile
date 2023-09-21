@@ -75,7 +75,6 @@ environment {
             }
         }   
     }
-    }
 
     stage (" Docker Publish "){
             steps {
@@ -87,5 +86,6 @@ environment {
                    echo '<--------------- Docker Publish Ended --------------->'  
                 }
             }
-}  
+  }  
+}
 }  
