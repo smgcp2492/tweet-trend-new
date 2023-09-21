@@ -1,5 +1,6 @@
 def registry = 'https://smdata001.jfrog.io'
-def version   = '2.1.4'
+def version   = '2.1.2'
+def imageName = 'smdata001.jfrog.io/valaxy-docker.local/ttrend'
 pipeline {
     agent {
         node {
@@ -80,7 +81,7 @@ environment {
             steps {
                 script {
                    echo '<--------------- Docker Publish Started --------------->'  
-                    docker.withRegistry(registry, 'artifactory_token'){
+                    docker.withRegistry(registry, 'artifac-cred'){
                         app.push()
                     }    
                    echo '<--------------- Docker Publish Ended --------------->'  
